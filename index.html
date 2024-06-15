@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Classification and Search</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Item Classification and Search</h1>
+        <form id="searchForm">
+            <label for="type">Item Type:</label>
+            <select id="type">
+                <option value="Clothes">Clothes</option>
+                <option value="Cup">Cup</option>
+                <option value="Plate">Plate</option>
+                <option value="Computer">Computer</option>
+                <option value="Shoes">Shoes</option>
+                <option value="Phone">Phone</option>
+                <option value="Vest">Vest</option>
+                <option value="Tablet">Tablet</option>
+                <option value="Camera">Camera</option>
+                <option value="TV">TV</option>
+            </select>
+            <label for="attribute">Attribute:</label>
+            <input type="text" id="attribute" placeholder="e.g., color, size, brand" required>
+            <label for="value">Value:</label>
+            <input type="text" id="value" placeholder="e.g., Red, 42, Apple" required>
+            <button type="submit">Search</button>
+        </form>
+        <button id="viewAll">View All Items</button>
+        <div id="items"></div>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>
